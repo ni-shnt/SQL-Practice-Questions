@@ -1,0 +1,5 @@
+SELECT * FROM customers
+WHERE age IN (18,19,20,21,22) AND 
+state in ('Victoria', 'Tasmania', 'Queensland')
+AND gender != 'n/a' 
+AND (customer_name LIKE 'A%' OR customer_name LIKE 'B%');
